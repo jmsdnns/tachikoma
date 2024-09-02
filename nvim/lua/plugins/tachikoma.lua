@@ -50,6 +50,68 @@ return {
         },
       },
     },
+    config = function()
+      local blc = require("bufferline.constants")
+      blc.sep_names["none"] = "none"
+      blc.sep_chars["none"] = { "", "" }
+
+      local bl = require("bufferline")
+      local bg = "#22272E"
+      local bg_visible = "#22272E"
+      local bg_selected = "#2C3E56"
+      local fg = "#3D77BE"
+      local fg_visible = "#3D77BE"
+      local fg_selected = "#539BF5"
+      bl.setup({
+        highlights = {
+          background = { bg = bg, fg = fg },
+          fill = { bg = bg, fg = fg },
+          trunc_marker = { bg = bg, fg = fg },
+          offset_separator = { bg = bg, fg = fg },
+
+          buffer = { bg = bg, fg = fg },
+          buffer_visible = { bg = bg_visible, fg = fg_visible },
+          buffer_selected = { bg = bg_selected, fg = fg_selected },
+          modified = { bg = bg, fg = fg },
+          modified_visible = { bg = bg_visible, fg = fg_visible },
+          modified_selected = { bg = bg_selected, fg = fg_selected },
+          separator = { bg = bg, fg = fg },
+          separator_visible = { bg = bg_visible, fg = fg_visible },
+          separator_selected = { bg = bg_selected, fg = fg_selected },
+          numbers = { bg = bg, fg = fg },
+          numbers_visible = { bg = bg_visible, fg = fg_visible },
+          numbers_selected = { bg = bg_selected, fg = fg_selected },
+          close_button = { bg = bg, fg = fg },
+          close_button_visible = { bg = bg_visible, fg = fg_visible },
+          close_button_selected = { bg = bg_selected, fg = fg_selected },
+          diagnostic = { bg = bg, fg = fg },
+          diagnostic_visible = { bg = bg_visible, fg = fg_visible },
+          diagnostic_selected = { bg = bg_selected, fg = fg_selected },
+
+          indicator_visible = { bg = bg_visible, fg = fg_visible },
+          indicator_selected = { bg = bg_selected, fg = fg_selected },
+
+          group_separator = { bg = bg, fg = fg },
+          group_label = { bg = bg, fg = fg },
+          tab = { bg = bg, fg = fg },
+          tab_selected = { bg = bg, fg = fg },
+          tab_separator = { bg = bg, fg = fg },
+          tab_separator_selected = { bg = bg, fg = fg },
+          tab_close = { bg = bg, fg = fg },
+        },
+        options = {
+          themable = true,
+          separator_style = "none",
+          indicator = { style = "none" },
+          --numbers = "buffer_id",
+          --show_buffer_icons = false,
+          --show_buffer_close_icons = false,
+          --show_close_icon = false,
+          show_tab_indicators = false,
+          --tab_size = 5,
+        },
+      })
+    end,
   },
   {
     "nvim-neo-tree/neo-tree.nvim",
