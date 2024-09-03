@@ -5,15 +5,21 @@
 config_option() {
     local option=$1
     local default_value="$2"
+
+    # tmux show-options -gqv will check the global tmux environment (-g) for
+    # settings stored as theme specific options. When option is set, its value
+    # is returned without the option name (-v). No error is returned if option
+    # is not set (-q), causing option_value to be an empty string
     local option_value=$(tmux show-options -gqv "$option")
     if [ -n "$option_value" ]; then
         echo "$option_value"
         return
     fi
+
     echo "$default_value"
 }
 
-# config options
+# load theme specific options as variables
 status_fg=$(config_option "@tachikoma-tmux-status-fg" '#539BF5')
 status_bg=$(config_option "@tachikoma-tmux-status-bg" '#2C3E56')
 active_fg=$(config_option "@tachikoma-tmux-active-fg" '#2C3E56')
@@ -54,6 +60,7 @@ if [ "$right_state" = false ]; then
     status_right_extra=""
 fi
 
+# use variables to configure tmux settings
 tmux set-option -g status-position "${status}"
 tmux set-option -g status-style bg=${status_bg},fg=${status_fg}
 tmux set-option -g status-justify "${justify}"
