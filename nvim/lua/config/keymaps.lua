@@ -1,8 +1,3 @@
 -- Keymaps are automatically loaded on the VeryLazy event
 -- Default keymaps that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/keymaps.lua
 -- Add any additional keymaps here
-
-local map = LazyVim.safe_keymap_set
-
-map("n", "<leader>tm", "<cmd>Telescope toggleterm_manager<cr>", { desc = "Terminal manager" })
-map("n", "<leader>tt", "<cmd>ToggleTerm<cr>", { desc = "Toggle terminals" })
