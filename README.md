@@ -6,15 +6,15 @@ Themes exist for Neovim, Tmux, Bash, Konsole, and iTerm2.
 
 ## Screenshots
 
+### A simple terminal.
 ![A terminal](screenshots/shell.png)
-A simple terminal.
 
+### A terminal with tmux running
 ![A terminal with tmux running](screenshots/shellWtmux.png)
-A terminal with tmux running
 
+### Neovim
 ![Neovim](screenshots/nvim.png)
-Neovim
 
+### Neovim with tmux
 ![Neovim with tmux](screenshots/nvimWtmux.png)
-Neovim with tmux
 
