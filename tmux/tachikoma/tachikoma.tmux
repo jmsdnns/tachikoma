@@ -35,9 +35,9 @@ status_right=$(config_option "@tachikoma-tmux-status-right" "#S")
 status_right_extra="$status_right$(config_option "@tachikoma-tmux-status-right-extra" '')"
 
 if [ "$show_expanded_icon_for_all_tabs" = true ]; then
-    window_status_format_str="${window_status_format}#{?window_zoomed_flag,${expanded_icon}, }"
+    window_status_format="${window_status_format_str}#{?window_zoomed_flag,${expanded_icon}, }"
 else
-    window_status_format_str="${window_status_format}"
+    window_status_format="${window_status_format_str}"
 fi
 
 if [ "$indicator_state" = true ]; then
