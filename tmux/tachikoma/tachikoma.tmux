@@ -67,6 +67,5 @@ tmux set-option -g status-justify "${justify}"
 tmux set-option -g status-left "${status_left_extra}"
 tmux set-option -g status-right "${status_right_extra}"
 tmux set-option -g message-style bg=${message_bg},fg=${message_fg}
-tmux set-option -g window-status-format "${window_status_format}"
 tmux set-option -g window-status-current-format "#[bg=${active_bg},fg=${active_fg}] ${window_status_format}#{?window_zoomed_flag,${expanded_icon}, }"
 tmux set-option -g window-status-format ${window_status_format_str}
