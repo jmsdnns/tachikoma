@@ -139,6 +139,12 @@ return {
       },
       window = {
         position = "left",
+        mappings = {
+          ["<tab>"] = function(state)
+            state.commands["open"](state)
+            vim.cmd("Neotree reveal")
+          end,
+        },
       },
       source_selector = {
         winbar = false,
