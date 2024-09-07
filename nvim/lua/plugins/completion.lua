@@ -23,4 +23,9 @@ return {
       })
     end,
   },
+  {
+    "garymjr/nvim-snippets",
+    -- Blows my mind anyone likes this
+    enabled = false,
+  },
 }
