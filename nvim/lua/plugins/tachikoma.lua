@@ -98,6 +98,9 @@ return {
           tab_separator = { bg = bg, fg = fg },
           tab_separator_selected = { bg = bg, fg = fg },
           tab_close = { bg = bg, fg = fg },
+          duplicate = { bg = bg, fg = fg },
+          duplicate_visible = { bg = bg_visible, fg = fg_visible },
+          duplicate_selected = { bg = bg_selected, fg = fg_selected },
         },
         options = {
           themable = true,
