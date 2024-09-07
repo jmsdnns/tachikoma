@@ -137,6 +137,13 @@ return {
           hide_gitignored = false,
         },
       },
+      window = {
+        position = "left",
+      },
+      source_selector = {
+        winbar = false,
+        statusline = true,
+      },
     },
   },
 }
