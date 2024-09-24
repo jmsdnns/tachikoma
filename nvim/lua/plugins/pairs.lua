@@ -1,6 +1,6 @@
 return {
   "echasnovski/mini.pairs",
   opts = {
-    modes = { insert = true, command = false, terminal = false },
+    modes = { insert = false, command = false, terminal = false },
   },
 }
