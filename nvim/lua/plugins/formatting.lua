@@ -7,7 +7,8 @@ return {
     opts = {
       event = "BufWritePre",
       formatters_by_ft = {
-        sql = { "sqlfluff" },
+        ["python"] = { "ruff" },
+        ["sql"] = { "sqlfluff" },
       },
       formatters = {
         sqlfluff = {
