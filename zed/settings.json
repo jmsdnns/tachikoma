@@ -1,0 +1,43 @@
+/// Tachikoma ///////////////////////////////////
+{
+  "vim_mode": true,
+  "theme": {
+    "mode": "system",
+    "light": "Github Light",
+    "dark": "Iceberg"
+  },
+  "buffer_font_family": "Fira Code",
+  "ui_font_size": 14,
+  "buffer_font_size": 13,
+  "indent_guides": {
+    "enabled": false
+  },
+  "outline_panel": {
+    "dock": "right"
+  },
+  "telemetry": {
+    "diagnostics": false,
+    "metrics": false
+  },
+  "git": {
+    "inline_blame": {
+      "enabled": false
+    }
+  },
+  "assistant": {
+    "enabled": false,
+    "version": "2"
+  },
+  "features": {
+    "inline_completion_provider": "none"
+  },
+  "lsp": {
+    "rust-analyzer": {
+      "initialization_options": {
+        "check": {
+          "command": "clippy" // rust-analyzer.check.command (default: "check")
+        }
+      }
+    }
+  }
+}
