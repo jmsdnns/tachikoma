@@ -11,6 +11,7 @@ window-width = 100
 gtk-titlebar = false
 gtk-tabs-location = bottom
 adw-toolbar-style = flat
+confirm-close-surface = false
 
 # Colors
 background = #22272e
