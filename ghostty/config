@@ -50,3 +50,7 @@ bell-features = no-system
 keybind = ctrl+shift+[=previous_tab
 keybind = ctrl+shift+]=next_tab
 keybind = shift+enter=text:\x1b\r
+
+# Kitty Protocol
+keybind = alt+backspace=text:\x1b\x7f
+keybind = shift+enter=text:\n
