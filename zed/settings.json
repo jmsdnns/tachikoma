@@ -1,23 +1,29 @@
 {
+  "collaboration_panel": {
+    "dock": "left"
+  },
+  "git_panel": {
+    "dock": "left"
+  },
+  "edit_predictions": {
+    "provider": "none"
+  },
   "buffer_font_family": "SF Mono Powerline",
-  "buffer_font_size": 15,
+  "buffer_font_size": 16,
   "buffer_line_height": {
     "custom": 1.4
   },
-  "ui_font_family": "Cantarell",
-  "ui_font_size": 15,
+  "ui_font_family": ".SystemUIFont",
+  "ui_font_size": 16,
   "theme": {
-    "mode": "system",
-    "light": "One Light",
-    "dark": "Tachikoma"
+    "mode": "dark",
+    "light": "GitHub Light",
+    "dark": "GitHub Dark Dimmed"
   },
   "format_on_save": "on",
   "formatter": "language_server",
   "indent_guides": {
     "enabled": false
-  },
-  "features": {
-    "edit_prediction_provider": "none"
   },
   "preview_tabs": {
     "enabled": false
@@ -45,7 +51,7 @@
   "outline_panel": {
     "file_icons": false,
     "folder_icons": false,
-    "dock": "left",
+    "dock": "right",
     "default_width": 300,
     "indent_guides": {
       "show": "never"
