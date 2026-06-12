@@ -2,8 +2,6 @@ return {
   {
     "neovim/nvim-lspconfig",
     opts = {
-      inlay_hints = { enabled = false },
-      autoformat = true,
       servers = {
         pyright = {
           settings = {
@@ -18,10 +16,6 @@ return {
           },
         },
         ruff = {
-          cmd_env = { RUFF_TRACE = "messages" },
-          settings = {
-            logLevel = "debug",
-          },
           keys = {
             {
               "<leader>co",
@@ -30,6 +24,14 @@ return {
             },
           },
         },
+      },
+    },
+  },
+  {
+    "stevearc/conform.nvim",
+    opts = {
+      formatters_by_ft = {
+        ["python"] = { "ruff_format", "ruff_organize_imports" },
       },
     },
   },
