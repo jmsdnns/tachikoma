@@ -4,6 +4,9 @@
 -- Disorienting
 vim.opt.relativenumber = false
 
+-- Don't render text, which causes syntax to be hidden
+vim.opt.conceallevel = 0
+
 -- Half tab
 vim.opt.tabstop = 4
 vim.opt.shiftwidth = 4
